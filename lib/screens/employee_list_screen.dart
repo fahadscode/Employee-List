@@ -248,12 +248,15 @@ class _EmployeeCard extends StatelessWidget {
             const SizedBox(height: 2),
             Row(
               children: [
-                Text(
-                  'Joined: ${dateFormat.format(employee.dateOfJoining)} '
-                  '(${employee.yearsInOrganization} yrs)',
-                  style: TextStyle(fontSize: 12, color: Colors.grey.shade600),
+                Flexible(
+                  child: Text(
+                    'Joined: ${dateFormat.format(employee.dateOfJoining)} '
+                    '(${employee.yearsInOrganization} yrs)',
+                    style: TextStyle(fontSize: 12, color: Colors.grey.shade600),
+                    overflow: TextOverflow.ellipsis,
+                  ),
                 ),
-                const Spacer(),
+                const SizedBox(width: 8),
                 Container(
                   padding:
                       const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
