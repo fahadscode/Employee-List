@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/employee_list_screen.dart';
+import 'screens/splash_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const EmployeeListScreen(),
+      home: const SplashScreen(),
     );
   }
 }
